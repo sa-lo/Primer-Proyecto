@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Detalles con Amor | Regalos personalizados</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root{
+  --principal:#6b3fa0;
+  --secundario:#e7c6ff;
+  --fondo:#f7f3f8;
+  --texto:#333;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:var(--fondo);
+  color:var(--texto);
+}
+
+/* ----------- NAV ----------- */
+nav{
+  background:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+  box-shadow:0 3px 8px rgba(0,0,0,.08);
+  position:sticky;
+  top:0;
+}
+
+nav h2{
+  margin:0;
+  color:var(--principal);
+}
+
+nav a{
+  text-decoration:none;
+  margin-left:15px;
+  color:#555;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:var(--principal);
+}
+
+/* ----------- HERO ----------- */
+.hero{
+  background:
+    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+    url("https://png.pngtree.com/thumb_back/fh260/background/20210224/pngtree-background-abstract-business-purple-image_564219.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height:300px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+.hero h1{
+  font-size:36px;
+}
+
+.hero p{
+  max-width:600px;
+  margin:auto;
+}
+
+.boton{
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 18px;
+  background:var(--secundario);
+  color:#000;
+  border-radius:20px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* ----------- CONTENEDOR ----------- */
+.contenedor{
+  max-width:1100px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.titulo{
+  text-align:center;
+  color:var(--principal);
+  margin-bottom:30px;
+}
+
+/* ----------- SERVICIOS ----------- */
+.servicios{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 5px 12px rgba(0,0,0,.08);
+  text-align:center;
+}
+
+.card h3{
+  color:var(--principal);
+}
+
+/* ----------- GALERIA ----------- */
+.galeria{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+}
+
+.galeria img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+/* ----------- SOBRE NOSOTROS ----------- */
+.sobre{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.sobre img{
+  width:100%;
+  border-radius:15px;
+}
+
+/* ----------- TESTIMONIOS ----------- */
+.testimonios{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.testimonio{
+  background:white;
+  padding:20px;
+  border-left:5px solid var(--principal);
+  border-radius:10px;
+}
+
+/* ----------- FORMULARIO ----------- */
+form{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  max-width:500px;
+  margin:auto;
+  box-shadow:0 5px 10px rgba(0,0,0,.08);
+}
+
+input, textarea{
+  width:100%;
+  padding:10px;
+  margin-bottom:12px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+button{
+  background:var(--principal);
+  color:white;
+  border:none;
+  padding:10px 20px;
+  border-radius:20px;
+  cursor:pointer;
+}
+
+button:hover{
+  opacity:.9;
+}
+
+/* ----------- FOOTER ----------- */
+footer{
+  background:var(--principal);
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media(max-width:700px){
+  .sobre{
+    grid-template-columns:1fr;
+  }
+  .hero h1{
+    font-size:26px;
+  }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <h2>Detalles con Amor</h2>
+  <div>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</nav>
+
+<section class="hero" id="inicio">
+  <div>
+    <h1>Regalos personalizados para momentos únicos</h1>
+    <p>Diseñamos anchetas, ramos y detalles especiales para sorprender a quienes más quieres.</p>
+    <a href="#contacto" class="boton">Haz tu pedido</a>
+  </div>
+</section>
+
+<section class="contenedor" id="servicios">
+  <h2 class="titulo">Nuestros servicios</h2>
+
+  <div class="servicios">
+    <div class="card">
+      <h3>Anchetas personalizadas</h3>
+      <p>Combinaciones de dulces, bebidas y detalles según la ocasión.</p>
+    </div>
+
+    <div class="card">
+      <h3>Ramos creativos</h3>
+      <p>Ramos con flores, chocolates o productos especiales.</p>
+    </div>
+
+    <div class="card">
+      <h3>Cajas sorpresa</h3>
+      <p>Diseños únicos con mensajes personalizados.</p>
+    </div>
+
+    <div class="card">
+      <h3>Eventos</h3>
+      <p>Detalles para cumpleaños, aniversarios y fechas especiales.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contenedor" id="galeria">
+  <h2 class="titulo">Galería de trabajos</h2>
+
+  <div class="galeria">
+    <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?auto=format&fit=crop&w=600&q=80">
+    <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=600&q=80">
+    <img src="https://images.unsplash.com/photo-1606509036992-4399d5c5afe4?auto=format&fit=crop&w=600&q=80">
+    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=600&q=80">
+  </div>
+</section>
+
+<section class="contenedor">
+  <h2 class="titulo">Sobre nuestro emprendimiento</h2>
+
+  <div class="sobre">
+    <div>
+      <p>
+        Somos un emprendimiento desarrollado en el marco del proyecto productivo,
+        enfocado en la creación de detalles personalizados para todo tipo de celebraciones.
+      </p>
+      <p>
+        Nuestro objetivo es que cada regalo transmita emociones, cariño y dedicación.
+      </p>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=800&q=80">
+  </div>
+</section>
+
+<section class="contenedor">
+  <h2 class="titulo">Opiniones de clientes</h2>
+
+  <div class="testimonios">
+    <div class="testimonio">
+      <p>"Hermosos detalles, muy puntuales y todo personalizado."</p>
+      <strong>- Laura</strong>
+    </div>
+
+    <div class="testimonio">
+      <p>"Me encantó la ancheta, súper recomendados."</p>
+      <strong>- Carlos</strong>
+    </div>
+
+    <div class="testimonio">
+      <p>"Excelente atención y presentación."</p>
+      <strong>- María</strong>
+    </div>
+  </div>
+</section>
+
+<section class="contenedor" id="contacto">
+  <h2 class="titulo">Contáctanos</h2>
+
+  <form onsubmit="enviarFormulario(event)">
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="email" id="correo" placeholder="Correo" required>
+    <textarea id="mensaje" rows="4" placeholder="Cuéntanos qué detalle deseas" required></textarea>
+    <button type="submit">Enviar mensaje</button>
+    <p id="respuesta" style="margin-top:10px;"></p>
+  </form>
+</section>
+
+<footer>
+  <p>Proyecto De Algoritmo Y Logica - Detalles con Amor</p>
+</footer>
+
+<script>
+function enviarFormulario(e){
+  e.preventDefault();
+
+  const nombre = document.getElementById("nombre").value;
+  document.getElementById("respuesta").textContent = "Gracias " + nombre + ", pronto te contactaremos.";
+}
+</script>
+
+</body>
+</html>
